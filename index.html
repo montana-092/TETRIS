@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNP TETRIS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CNP TETRIS</h1>
+    <div class="board-wrapper">
+        <canvas id="game" width="300" height="600"></canvas>
+        <div class="side-panel">
+            <div id="next-label">NEXT</div>
+            <canvas id="next" width="120" height="120"></canvas>
+            <div id="score">SCORE: 0</div>
+            <div id="controls">
+                <h3>CONTROLS</h3>
+                <ul>
+                    <li>← / → : Move</li>
+                    <li>↓ : Soft Drop</li>
+                    <li>↑ / X / W : Rotate CW</li>
+                    <li>Z / Q : Rotate CCW</li>
+                    <li>Space : Hard Drop</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Touch Controls -->
+    <div id="touch-controls">
+        <button data-act="left">&#8592;</button>
+        <button data-act="rotateCCW">&#8634;</button>
+        <button data-act="down">&#8595;</button>
+        <button data-act="rotateCW">&#8635;</button>
+        <button data-act="right">&#8594;</button>
+        <button data-act="hard">&#10515;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
